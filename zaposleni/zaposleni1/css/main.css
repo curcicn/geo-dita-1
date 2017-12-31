@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Grid measurements:
+ *
+ *   960px wide including 12 gutters (half gutters on both edges)
+ *
+ *   60px columns (12)
+ *   20px gutters (two half-gutters + 11 full gutters, so 12 total)
+ *
+ *
+ *   For smaller screens, we always want 20px of padding on either side,
+ *   so 960 + 20 + 20 => 1000px
+ *
+ **/
+.row {
+  max-width: 1000px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+}
+
+/* Clearfix */
+.row::before,
+.row::after {
+  display: table;
+  content: '';
+}
+
+.row::after {
+  clear: both;
+}
+
+.col-2, .col-3, .col-4, .col-6, .col-12 {
+  float: left;
+
+  /* Gutters:
+   * Each column is padded by half-a-gutter on each side,
+   *
+   * Half a gutter is 10px, 10/960 (context) = 1.041666%
+   *
+   */
+  padding-left: 1.041666%;
+  padding-right: 1.041666%;
+}
+
+/* Mobile defaults */
+.col-2, .col-3, .col-4, .col-6, .col-12 {
+  width: 100%;
+}
+
+
+/* Non-mobile, grid */
+@media only screen and (min-width: 640px) {
+ /* 3 columns, 3/12 in % */
+  .col-2 {
+    width: 16.66%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  /* 4 columns */
+  .col-4 {
+    width: 33.33%;
+  }
+
+  /* 6 columns */
+  .col-6 {
+    width: 50%;
+
+  }
+
+  /* 12 columns */
+  .col-12 {
+    width: 100%;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  outline: 1px solid darkblue;
+}
+
+.clearfix:after {   /*clearfix pseudoclass*/
+  visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.title {        /*editing the title*/
+  display: block;
+  float: left;
+  width: 99%;
+}
+
+h1 {
+  width: 50%;
+  color: #2378c8;
+  border-bottom: 3px groove lightgrey;
+  margin-left: 25px;
+}
+
+.employees {    /*editing main containers*/ 
+  width: 100%;
+}
+
+.employee1,
+.employee2,
+.employee3,
+.employee4 {
+  outline: 3px ridge #2378c8;
+}
+
+.employee1 img,   /*editing images*/
+.employee2 img,
+.employee3 img,
+.employee4 img {
+  float: left;
+  margin-right: 10px;
+  border: 1px solid black;
+  padding: 4px;
+  width: 70px;
+  height: 70px;
+}
+
+.container1,    /*editing content and text*/
+.container2 {
+  float: left;
+  padding: 4px;
+}
+
+.container2 p {
+  margin: 0;
+  padding-bottom: 2px;
+  font-size: 14px;
+}
+
+.container2 p:first-child {
+  color:  #0000CD;
+  font-size: 16px;
+}
+
+/*.employee1,   -----> better design, but not responsive
+.employee2,
+.employee3,
+.employee4 {
+  width: 48%;
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+
+.employee1,
+.employee3 {
+  margin-left: none;
+}*/
+
+.employee1 a,   /*editing links*/
+.employee2 a,
+.employee3 a,
+.employee4 a {
+  text-decoration: none;
+}
+
+.employee1 a:link a:visited,
+.employee2 a:link a:visited,
+.employee3 a:link a:visited,
+.employee4 a:link a:visited {
+  color: #0D1D56;
+}
+
+.employee1 a:hover,
+.employee2 a:hover,
+.employee3 a:hover,
+.employee4 a:hover {
+  color: #DC143C;
+}
+
+.employee1 a:active,
+.employee2 a:active,
+.employee3 a:active,
+.employee4 a:active {
+  color: #0D1D56;
+}

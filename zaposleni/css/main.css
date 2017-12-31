@@ -1,0 +1,107 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	margin: 0 auto;
+	padding: 0 auto;
+	width: 99%;
+	height: 900px;
+	outline: 1px solid darkblue;
+}
+
+h1 {
+	display: block;
+	float: left;
+	width: 50%;
+	height: 5%;
+	color: #2378c8;
+	border-bottom: 3px groove lightgrey;
+	margin-left: 25px;
+}
+
+.emps {
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+}
+
+.emp1,
+.emp2,
+.emp3,
+.emp4 {
+	display: block;
+	float: left;
+	width: 30%;
+	margin-left: 20px;
+	outline: 3px ridge #2378c8;
+
+}
+
+.emp1 img,
+.emp2 img,
+.emp3 img,
+.emp4 img {
+	float: left;
+	margin-right: 10px;
+	border: 1px solid black;
+	padding: 4px;
+	width: 50px;
+	height: 50px;
+}
+
+.container1,
+.container2 {
+	float: left;
+	padding: 4px;
+}
+
+.container2 p {
+	margin: 0;
+	padding-bottom: 2px;
+	font-size: 14px;
+}
+
+.container2 p:first-child {
+	color: 	#0000CD;
+	font-size: 16px;
+}
+
+.emp1,
+.emp2 {
+	margin-bottom: 25px;
+}
+
+.emp1,
+.emp3 {
+	clear: left;
+}
+
+.emp1 a,
+.emp2 a,
+.emp3 a,
+.emp4 a {
+	text-decoration: none;
+}
+
+.emp1 a:link a:visited,
+.emp2 a:link a:visited,
+.emp3 a:link a:visited,
+.emp4 a:link a:visited {
+	color: #0D1D56;
+}
+
+.emp1 a:hover,
+.emp2 a:hover,
+.emp3 a:hover,
+.emp4 a:hover {
+	color: #DC143C;
+}
+
+.emp1 a:active,
+.emp2 a:active,
+.emp3 a:active,
+.emp4 a:active {
+	color: #0D1D56;
+}

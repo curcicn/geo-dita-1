@@ -1,0 +1,73 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	margin: 0 auto;
+	padding: 0 auto;
+	width: 99%;
+	height: 900px;
+	outline: 1px solid darkblue;
+}
+
+h1 {
+	display: block;
+	float: left;
+	width: 50%;
+	height: 5%;
+	color: #2378c8;
+	border-bottom: 3px groove lightgrey;
+	margin-left: 25px;
+}
+
+.container1 {
+	clear: left;
+	width: 80%;
+	margin: 0 0 0 25px;
+}
+
+.container1 p {
+	margin-bottom: 5px;
+}
+
+.container1 ul {
+	margin-top: 0px;
+	list-style-type: square;
+}
+
+.container2 {
+	float: left;
+	margin: 25px 0 0 65px;
+}
+
+.bmw,
+.honda,
+.pumpe {
+	float: left;
+	width: 100%;
+	margin-bottom: 30px;
+}
+
+.bmw1,
+.honda1,
+.pumpe1 {
+	float: left;
+	float: left;
+	margin-right: 10px;
+	border: 1px solid black;
+	padding: 4px;
+}
+
+.bmw2,
+.honda2,
+.pumpe2 {
+	float: left;
+}
+
+.bmw2 p,
+.honda2 p,
+.pumpe2 p {
+	margin: 0;
+	padding-bottom: 10px;
+}

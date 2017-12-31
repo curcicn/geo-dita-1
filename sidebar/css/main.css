@@ -1,0 +1,154 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 99%;
+	outline: 1px solid darkblue;
+}
+
+.clearfix:after {		/*clearfix pseudoclass*/
+	visibility: hidden;
+  	display: block;
+  	font-size: 0;
+  	content: " ";
+  	clear: both;
+  	height: 0;
+}
+
+.gradient {				/*beginning of gradient in header*/
+	width: 100%;
+	height: 15%;
+	outline: 1px solid darkblue;
+  	background: linear-gradient(to left, #021b79, #0575e6);
+}
+
+.gradient img {
+	display: block;
+	width: 10%;
+	height: 20%;
+	padding: 15px 0 0 30px;
+}
+
+.main_img {
+	display: block;
+	margin: auto;
+	margin-top: 20px;
+	padding-top: 0px;
+	width: 60%;
+}
+
+.sidebar {
+	float: left;
+	width: 15%;
+	border: 5px ridge darkgrey;
+	border-radius: 5px;
+	background-color: #E5E4F0;
+}
+
+.info {					/*beginning of first half of sidebar*/
+	width: 100%;
+	text-align: center;
+}
+
+.info p {
+	font-size: 13px;
+	margin: 0 auto;
+	padding: 2px 0;
+}
+
+.info p:first-child,	/*main headings in top half*/
+.info p:nth-child(5),
+.info p:nth-child(7) {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.info p:nth-child(6),	/*relevant information*/
+.info p:nth-child(8) {
+	font-size: 14px;
+	border-bottom: 8px groove grey;	
+}
+
+.info p:nth-child(4),
+.info p:nth-child(6) {
+	border-bottom: 1px solid black;
+}
+
+.info p:nth-child(2),
+.info p:nth-child(3) {
+	padding: 0;
+}
+
+.links {				/*beginning of second half of sidebar*/
+	width: 100%;
+	text-align: center;
+}
+
+.links p {
+	font-size: 13px;
+	margin: 0;
+	border-bottom: 1px dashed grey;
+}
+
+.links p:first-child,	
+.links p:nth-child(3),
+.links p:nth-child(5) {
+	border-bottom: none;
+}
+
+.links p:first-child {		/*'KORISNI LINKOVI'*/
+	font-size: 14px;
+	font-weight: bolder;
+	padding: 10px 0 0 0;
+}
+
+.links p:nth-child(2) {		/*link*/
+	font-size: 14px;
+	padding: 10px 0 10px 0;
+}
+
+.links p:nth-child(3) {		/*link*/
+	font-size: 14px;
+	padding: 10px 0 0 0;
+}
+
+.links p:nth-child(4) {		/*description of link*/
+	font-size: 12px;
+	padding: 0 0 10px 0;
+}
+
+.links p:nth-child(5) {		/*link*/
+	font-size: 14px;
+	padding: 10px 0;
+}
+
+.links a {
+	text-decoration: none;
+}
+
+.links a:link,
+.links a:visited {
+	color: #0D1D56;
+}
+
+.links a:hover {
+	color: #DC143C;
+}
+
+.links a:active {
+	color: #0D1D56;
+}
+
+.sidebar{			/*sidebar fixing*/
+	position: absolute;
+	top: 90px;
+	left: 25px;
+}
+
+span {				/*adding height to wrapper*/
+	display: block;
+	height: 100px;
+}
