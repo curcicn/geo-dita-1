@@ -3,71 +3,109 @@ body {
 	padding: 0;
 }
 
+.clearfix:after {
+	display: block;
+	clear: both;
+	content: ' ';
+	height: 1px;
+	visibility: hidden;
+}
+
 .wrapper {
 	margin: 0 auto;
 	padding: 0 auto;
 	width: 99%;
-	height: 900px;
 	outline: 1px solid darkblue;
 }
 
-h1 {
+.heading {
 	display: block;
+	width: 100%;
+}
+
+h1 {
 	float: left;
-	width: 50%;
-	height: 5%;
+	width: 40%;
 	color: #2378c8;
 	border-bottom: 3px groove lightgrey;
 	margin-left: 25px;
 }
 
 .container1 {
-	clear: left;
 	width: 80%;
-	margin: 0 0 0 25px;
-}
-
-.container1 p {
-	margin-bottom: 5px;
+	margin: 0 0 20px 25px;
 }
 
 .container1 ul {
-	margin-top: 0px;
 	list-style-type: square;
 }
 
 .container2 {
-	float: left;
-	margin: 25px 0 0 65px;
-}
-
-.bmw,
-.honda,
-.pumpe {
-	float: left;
 	width: 100%;
-	margin-bottom: 30px;
+	margin: 0 0 0 50px;
 }
 
-.bmw1,
-.honda1,
-.pumpe1 {
+.project1,
+.project2,
+.project3,
+.project4,
+.project5,
+.project6,
+.project7,
+.project8,
+.project9 {
+	display: block;
 	float: left;
-	float: left;
-	margin-right: 10px;
-	border: 1px solid black;
+	width: 31%;
+}
+
+.project4,
+.project5,
+.project6,
+.project7,
+.project8,
+.project9 {
+	margin-top: 15px;
+}
+
+.project1 img,
+.project2 img,
+.project3 img,
+.project4 img,
+.project5 img,
+.project6 img,
+.project7 img,
+.project8 img,
+.project9 img {
+	width: 350px;
+	height: 200px;
+	border: 3px ridge #2378c8;
+	border-radius: 3px;
 	padding: 4px;
 }
 
-.bmw2,
-.honda2,
-.pumpe2 {
-	float: left;
+.project1 p,
+.project2 p,
+.project3 p,
+.project4 p,
+.project5 p,
+.project6 p,
+.project7 p,
+.project8 p,
+.project9 p  {
+	margin: 4px 0 0 110px;
+	font-style: italic;
 }
 
-.bmw2 p,
-.honda2 p,
-.pumpe2 p {
-	margin: 0;
-	padding-bottom: 10px;
+.project1 p {
+	margin-left: 80px;
+}
+.project4 p,
+.project7 p {
+	margin-left: 60px;
+}
+
+.project8 p,
+.project9 p {
+	margin-left: 115px;
 }

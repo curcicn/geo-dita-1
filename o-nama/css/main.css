@@ -1,0 +1,46 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.clearfix:after {
+	display: block;
+	clear: both;
+	content: ' ';
+	height: 1px;
+	visibility: hidden;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 99%;
+	outline: 1px solid darkblue;
+}
+
+.heading {
+	display: block;
+	width: 100%;
+}
+
+h1 {
+	float: left;
+	width: 40%;
+	color: #2378c8;
+	border-bottom: 3px groove lightgrey;
+	margin-left: 25px;
+}
+
+.main_container {
+	width: 90%;
+	margin-left: 25px;
+	text-align: justify;
+}
+
+.main_container p {
+	margin: 10px 0;
+}
+
+.main_container img {
+	display: block;
+	margin: 0 auto;
+}
